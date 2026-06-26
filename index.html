@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>チーム開発 - スポーツサイト</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -11,12 +12,23 @@
     </header>
 
     <main class="content-wrapper">
-        <section class="sports-history">
+        
+        <aside class="sidebar">
+            <h3 class="sidebar-title">目次</h3>
+            <ul class="sidebar-list">
+                <li><a href="#era1">1. 古代</a></li>
+                <li><a href="#era2">2. 中世〜近世</a></li>
+                <li><a href="#era3">3. 近代</a></li>
+                <li><a href="#era4">4. 現代から未来へ</a></li>
+            </ul>
+        </aside>
+
+        <section class="contents sports-history">
             <h2 class="section-title">スポーツの歴史</h2>
             <p class="lead-text">人類の歴史とともに歩んできたスポーツは、単なる肉体の競い合いから、文化、娯楽、そして一大産業へと姿を変えてきました。その歩みを大きな4つのパラダイムに分けて紐解きます。</p>
 
             <div class="history-timeline">
-                <article class="timeline-item">
+                <article class="timeline-item" id="era1">
                     <h3 class="era-title">1. 古代：祭祀と生存のための身体運動</h3>
                     <p>スポーツの起源は、狩猟のための技術向上や、神々への祈りを捧げる祭祀にあります。</p>
                     <ul class="bullet-list">
@@ -25,7 +37,7 @@
                     </ul>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="era2">
                     <h3 class="era-title">2. 中世〜近世：民衆の遊びと騎士の嗜み</h3>
                     <p>地域ごとの文化と結びつき、現在の球技の原型となる祭りや、階級ごとのスポーツが生まれました。</p>
                     <ul class="bullet-list">
@@ -34,7 +46,7 @@
                     </ul>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="era3">
                     <h3 class="era-title">3. 近代：ルールの確立と「近代スポーツ」の誕生</h3>
                     <p>19世紀のイギリスを中心に、現在のスポーツの形が作られました。</p>
                     <ul class="bullet-list">
@@ -43,12 +55,12 @@
                     </ul>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" id="era4">
                     <h3 class="era-title">4. 現代から未来へ：グローバル化とテクノロジーの融合</h3>
                     <p>20世紀から現代にかけて、スポーツはメディアの発達とともに巨大なエンターテインメントへと進化しました。</p>
                     <ul class="bullet-list">
                         <li><strong>商業化とプロフェッショナル：</strong> <p>放映権ビジネスやスポンサーシップにより、アスリートは職業として確立されました。</p></li>
-                        <li><strong>多様性とインクルージョン：</strong> <p>パラリンピックの発展や、ジェンダー平等の推進など、誰もが楽しめるスポーツへと変化しています。</p></li>
+                        <li><strong>多様性とインクルージョン：</strong> <p>パラリンピックの発展や、ジェンダー平後の推進など、誰もが楽しめるスポーツへと変化しています。</p></li>
                     </ul>
                 </article>
             </div>
