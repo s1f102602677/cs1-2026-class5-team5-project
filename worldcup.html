@@ -2,9 +2,291 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ワールドカップ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup 2026 特設ファンサイト</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ワールドカップ</h1>
+
+    <header>
+        <h1>2026 W杯</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">大会概要</a></li>
+                <li><a href="#hosts">開催国</a></li>
+                <li><a href="#Japan">日本代表スケジュール</a></li>
+                <li><a href="#players">大会最注目スター選手</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインビジュアル -->
+    <div class="hero">
+        <div class="badge-container">
+            <span class="badge">初・48カ国出場</span>
+            <span class="badge">北中米共同開催</span>
+        </div>
+        <h2>FIFA WORLD CUP 2026</h2>
+        <p>アメリカ・カナダ・メキシコが舞台の歴史的大会を見逃すな！</p>
+    </div>
+
+    <!-- 大会概要セクション -->
+    <section class="container" id="about">
+        <h3>2026年大会の見どころ</h3>
+        <p class="about-text">
+            2026年大会は、本大会の出場チーム数が従来の32カ国から<b>48カ国</b>へと大幅に拡大されます。試合数も全104試合に増加し、約1ヶ月半にわたって世界最高峰の熱戦が繰り広げられます。
+        </p>
+    </section>
+
+    <!-- 開催国セクション -->
+    <section class="bg-white">
+        <div class="container" id="hosts">
+            <h3>3大開催国スタジアム</h3>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <h4>アメリカ (USA)</h4>
+                    <p>決勝戦が行われるニューヨーク（ニュージャージー）やロサンゼルスなど、最多の11都市が舞台となります。</p>
+                </div>
+                <div class="host-card">
+                    <h4>カナダ (CANADA)</h4>
+                    <p>バンクーバーとトロントの2都市で開催。初の冬季五輪開催国が、夏のサッカー熱に包まれます。</p>
+                </div>
+                <div class="host-card">
+                    <h4>メキシコ (MEXICO)</h4>
+                    <p>首都メキシコシティ（アステカ・スタジアム）など3都市。過去2回の開催実績を誇る伝統の地です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 日程・結果セクション -->
+    <section class="container" id="Japan">
+        <h3>日本代表スケジュール</h3>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>日時 (日本時間)</th>
+                    <th>グループ / カード</th>
+                    <th>ステータス</th>
+                    <th>開催都市</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6月15日 5:00</td>
+                    <td>オランダ戦</td>
+                    <td><span class="status upcoming">2-2</span></td>
+                    <td>ダラススタジアム</td>
+                </tr>
+                <tr>
+                    <td>6月21日 13:00</td>
+                    <td>チュニジア戦</td>
+                    <td><span class="status upcoming">4-0</span></td>
+                    <td>モンテレイスタジアム</td>
+                </tr>
+                <tr>
+                    <td>6月26日 8:00</td>
+                    <td>スウェーデン戦</td>
+                    <td><span class="status upcoming">1-1</span></td>
+                    <td>ダラススタジアム</td>
+                </tr>
+                <tr>
+                    <td>6月30日 2:00</td>
+                    <td>ベスト32 ブラジル戦</td>
+                    <td><span class="status upcoming">0-0</span></td>
+                    <td>ホストンスタジアム</td>
+                </tr>
+                <tr>
+                    <td>7月20日 4:00</td>
+                    <td>決勝戦</td>
+                    <td><span class="status upcoming">準備中</span></td>
+                    <td>ニューヨークスタジアム</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<!-- グループリーグ順位表セクション -->
+<section class="container" id="standings">
+    <h3>グループリーグ順位表（グループF）</h3>
+    
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>順位</th>
+                <th>国名</th>
+                <th>勝点</th>
+                <th>試合</th>
+                <th>勝</th>
+                <th>分</th>
+                <th>敗</th>
+                <th>得点</th>
+                <th>失点</th>
+                <th>差</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="advance-zone">
+                <td>1</td>
+                <td>オランダ</td>
+                <td><strong>7</strong></td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>10</td>
+                <td>4</td>
+                <td>+6</td>
+            </tr>
+            <tr class="advance-zone">
+                <td>2</td>
+                <td>日本</td>
+                <td><strong>5</strong></td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>7</td>
+                <td>3</td>
+                <td>+4</td>
+            </tr>
+            <tr class="unclear-zone">
+                <td>3</td>
+                <td>スウェーデン</td>
+                <td><strong>4</strong></td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>チュニジア</td>
+                <td><strong>0</strong></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+                <td>12</td>
+                <td>-10</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="table-note">※各組上位2チームと、3位のうち成績上位8チームが決勝トーナメント（ラウンド32）に進出。</p>
+</section>
+
+<!-- 注目選手（ピックアッププレイヤー）セクション -->
+<section class="container" id="players">
+    <h3>大会最注目スター選手</h3>
+    <p class="section-desc">2026年大会の命運を握る、世界最高峰のキープレイヤーたち。</p>
+
+    <div class="player-grid">
+        
+        <div class="player-card">
+            <div class="player-header">
+                <span class="player-country">フランス</span>
+                <span class="player-pos forward">FW</span>
+            </div>
+            <h4 class="player-name">キリアン・エムバペ</h4>
+            <div class="player-meta">
+                <p><strong>所属:</strong> レアル・マドリード（スペイン）</p>
+                <p><strong>年齢:</strong> 27歳 / <strong>W杯出場:</strong> 3回目</p>
+            </div>
+            <p class="player-desc">
+                圧倒的な爆発力とスピードを誇る、名実ともにフランス代表の絶対的エース。今大会も前線からの高速カウンターでゴールを量産し、世界中のディフェンダーを恐怖に陥れています。
+            </p>
+        </div>
+
+        <div class="player-card">
+            <div class="player-header">
+                <span class="player-country">アルゼンチン</span>
+                <span class="player-pos forward">FW</span>
+            </div>
+            <h4 class="player-name">リオネル・メッシ</h4>
+            <div class="player-meta">
+                <p><strong>所属:</strong> インテル・マイアミ（アメリカ）</p>
+                <p><strong>年齢:</strong> 38歳 / <strong>W杯出場:</strong> 6回目（史上初）</p>
+            </div>
+            <p class="player-desc">
+                 前回大会で悲願の初優勝を果たし、今大会で前人未到の「W杯6大会連続出場」を果たした史上最高のサッカー神。年齢を重ねて運動量は落ちたものの、一瞬の閃きから繰り出されるパスや高精度のFKは未だ世界一のクオリティを誇り、開催国アメリカのピッチで再び世界を魅了しています。
+            </p>
+        </div>
+
+        <div class="player-card">
+            <div class="player-header">
+                <span class="player-country">ブラジル</span>
+                <span class="player-pos forward">FW</span>
+            </div>
+            <h4 class="player-name">ネイマール</h4>
+            <div class="player-meta">
+                <p><strong>所属:</strong> サントス（ブラジル）</p>
+                <p><strong>年齢:</strong> 34歳 / <strong>W杯出場:</strong> 4回目</p>
+            </div>
+            <p class="player-desc">
+                大怪我による長期離脱を乗り越え、この北中米の舞台に完全復活を果たしたブラジルの至宝にして絶対的10番。ペレ氏を超えるブラジル代表歴代最多得点記録を保持しており、今大会は自身最後とも囁かれるW杯で、24年ぶりとなる「セレソン（ブラジル代表）の優勝」だけを見据えてピッチに立ちます。
+            </p>
+        </div>
+
+        <div class="player-card">
+            <div class="player-header">
+                <span class="player-country">スペイン</span>
+                <span class="player-pos forward">FW</span>
+            </div>
+            <h4 class="player-name">ラミン・ヤマル</h4>
+            <div class="player-meta">
+                <p><strong>所属:</strong> バルセロナ（スペイン）</p>
+                <p><strong>年齢:</strong> 18歳 / <strong>W杯出場:</strong> 初出場</p>
+            </div>
+            <p class="player-desc">
+                ユーロ2024で数々の最年少記録を塗り替え、スペインを欧州王者に導いた18歳の神童。右サイドから中央へ鋭く切り込む極上のドリブルと天才的なパスセンスで、初の世界舞台を席巻しています。
+            </p>
+        </div>
+
+        <div class="player-card">
+            <div class="player-header">
+                <span class="player-country">日本</span>
+                <span class="player-pos forward">FW</span>
+            </div>
+            <h4 class="player-name">上田 綺世</h4>
+            <div class="player-meta">
+                <p><strong>所属:</strong> フェイエノールト（オランダ）</p>
+                <p><strong>年齢:</strong> 27歳 / <strong>W杯出場:</strong> 2回目</p>
+            </div>
+            <p class="player-desc">
+                直近のオランダリーグで25得点を挙げ得点王に輝いた、日本が誇る最強のストライカー。強靭なフィジカルによるポストプレーと、左右両足・頭からゴールを狙える圧倒的な決定力で日本の攻撃を牽引します。
+            </p>
+        </div>
+
+        <div class="player-card">
+            <div class="player-header">
+                <span class="player-country">󠁢イングランド</span>
+                <span class="player-pos midfield">MF</span>
+            </div>
+            <h4 class="player-name">ジュード・ベリンガム</h4>
+            <div class="player-meta">
+                <p><strong>所属:</strong> レアル・マドリード（スペイン）</p>
+                <p><strong>年齢:</strong> 22歳 / <strong>W杯出場:</strong> 2回目</p>
+            </div>
+            <p class="player-desc">
+                中盤の底からトップ下まで全ての役割をハイレベルでこなす、現代フットボール界を代表する万能型MF。恵まれた体躯を活かした力強い推進力と、試合を決める抜群の得点感覚を備えています。
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2026 2026 W杯ファンサイト制作プロジェクト. All rights reserved.</p>
+        <p class="footer-sub">※本サイトはファンが運営する非公式サイトです。</p>
+    </footer>
+
 </body>
 </html>
