@@ -1,0 +1,326 @@
+/* ==========================================
+   1. デザインテーマ・全体設定
+   ========================================== */
+:root {
+    --bg-dark: #0b0c10;       /* 近未来的で重厚感のある黒 */
+    --bg-card: #ffffff;       /* カード背景用のクリーンな白 */
+    --text-main: #1f2833;     /* 本文の文字色 */
+    --text-muted: #666666;    /* 補助テキストのグレー */
+    --primary: #007bff;       /* メインのブルー */
+    --accent: #6f42c1;        /* アクセントのパープル */
+    --border-color: #e9ecef;  /* テーブル等の境界線 */
+    
+    /* ポジション・ステータスカラー */
+    --color-fw: #dc3545;      /* FW用の赤 */
+    --color-mf: #28a745;      /* MF用の緑 */
+    --color-live: #e63946;    /* ライブ点滅用の赤 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* 共通コンテナ */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+section h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   2. 順位表セクション (Standings)
+   ========================================== */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+}
+
+.data-table th, .data-table td {
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.data-table td {
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* チーム名の列だけ左寄せ */
+.data-table td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* 突破圏内の背景色分け */
+.advance-zone {
+    background-color: #f0f7ff; /* 上位2チーム（青背景） */
+}
+.unclear-zone {
+    background-color: #fffdf0; /* 3位（黄色背景） */
+}
+
+.table-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+/* ==========================================
+   3. 試合結果セクション (Results)
+   ========================================== */
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.result-box {
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    border: 1px solid var(--border-color);
+}
+
+.result-header {
+    background: #f8f9fa;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 40%;
+}
+.result-body .team-name:last-child {
+    text-align: right;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--bg-dark);
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+
+.result-footer {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    background: #fafafa;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ==========================================
+   4. 決勝トーナメント表セクション (Tournament)
+   ========================================== */
+.tournament-bracket {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.matchup {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.matchup-title {
+    background: #f1f3f5;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.matchup-teams {
+    padding: 10px 0;
+}
+
+.team-row {
+    padding: 8px 15px;
+    font-size: 0.95rem;
+}
+.team-row:first-child {
+    border-bottom: 1px solid #f8f9fa;
+}
+
+/* 勝者を太字にする装飾 */
+.w-winner {
+    font-weight: 700;
+    color: var(--primary);
+    background-color: #eef6ff;
+}
+
+.next-stage-info {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent);
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   5. 注目選手セクション (Players)
+   ========================================== */
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.player-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.player-country {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.player-pos {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.player-pos.forward { background-color: var(--color-fw); }
+.player-pos.midfield { background-color: var(--color-mf); }
+
+.player-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--bg-dark);
+}
+
+.player-meta {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+.player-meta p {
+    margin-bottom: 4px;
+}
+.player-meta p:last-child {
+    margin-bottom: 0;
+}
+
+.player-desc {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   6. モバイル用レスポンシブ対応 (スマホ画面)
+   ========================================== */
+@media (max-width: 768px) {
+    /* コンテナの余白調整 */
+    .container {
+        padding: 40px 15px;
+    }
+    
+    /* 順位表：スマホではみ出さないよう横スクロール可能に */
+    #standings {
+        overflow-x: auto;
+    }
+    .data-table {
+        min-width: 600px; /* テーブルの最小幅を確保 */
+    }
+
+    /* 試合結果：要素をコンパクトに */
+    .result-body {
+        padding: 20px;
+    }
+    .team-name {
+        font-size: 1.05rem;
+    }
+    .score {
+        font-size: 1.5rem;
+        padding: 2px 14px;
+    }
+    
+    /* 注目選手：カードの間隔調整 */
+    .player-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
