@@ -201,3 +201,12 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+
+.card p {
+    margin: 0;
+}
+
+#legends .card,
+#top-players .card {
+    min-height: 180px;
+}

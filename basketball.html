@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/basketball.css"/> 
-    <title>バスケットボール特設ページ</title>
+    <title>バスケットボール</title>
 </head>
 <body>
 
@@ -28,6 +28,10 @@
             <nav class="page-nav">
                 <a href="#history">歴史</a>
                 <a href="#rankings">世界ランキング</a>
+                <a href="#now">現在のリーグ情報</a>
+                <a href="#legends">歴代NBA名選手</a>
+                <a href="#top-players">上位国の男子代表選手</a>
+                <a href="#women-top-players">上位国の女子代表選手</a>
             </nav>
 
             <div class="container">
@@ -117,105 +121,263 @@
                             </tr>
                         </tbody>
                     </table>
+                </section>
 
-                    <h3>現在の試合</h3>
-                    <p style="margin-top: 10px; margin-bottom: 15px;">現在、2027FIBAに向けた地区予選が行われている</p>
+                <section id="now">
+                    <h2>現在の試合</h2>
+                    <p class="now-description">現在、2027FIBAに向けた地区予選が行われている</p>
 
                     <h3>予選順位</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>順位</th>
-                                <th>国名</th>
-                                <th>w/l</th>
-                                <th>PTS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><th colspan="4" class="table-group-title">グループA</th></tr>
-                            <tr>
-                                <td>1</td>
-                                <td>AUS</td>
-                                <td>4/0</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>NZL</td>
-                                <td>2/2</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>PHI</td>
-                                <td>2/2</td>
-                                <td>6</td>
-                            </tr>
-                            <tr><th colspan="4" class="table-group-title">グループB</th></tr>
-                            <tr>
-                                <td>1</td>
-                                <td>JPN</td>
-                                <td>3/1</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>KOR</td>
-                                <td>2/2</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>CHN</td>
-                                <td>2/2</td>
-                                <td>6</td>
-                            </tr>
-                            <tr><th colspan="4" class="table-group-title">グループC</th></tr>
-                            <tr>
-                                <td>1</td>
-                                <td>JOR</td>
-                                <td>3/0</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>IRI</td>
-                                <td>2/1</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>SYR</td>
-                                <td>1/2</td>
-                                <td>4</td>
-                            </tr>
-                            <tr><th colspan="4" class="table-group-title">グループD</th></tr>
-                            <tr>
-                                <td>1</td>
-                                <td>LBN</td>
-                                <td>2/1</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>QAT</td>
-                                <td>2/1</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>KSA</td>
-                                <td>2/1</td>
-                                <td>5</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                    <div class="group-container">
+                        <h4>グループA</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>順位</th>
+                                    <th>国名</th>
+                                    <th>w/l</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>AUS</td>
+                                    <td>4/0</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>NZL</td>
+                                    <td>2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>PHI</td>
+                                    <td>2/2</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="group-container">
+                        <h4>グループB</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>順位</th>
+                                    <th>国名</th>
+                                    <th>w/l</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>JPN</td>
+                                    <td>3/1</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>KOR</td>
+                                    <td>2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>CHN</td>
+                                    <td>2/2</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="group-container">
+                        <h4>グループC</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>順位</th>
+                                    <th>国名</th>
+                                    <th>w/l</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>JOR</td>
+                                    <td>3/0</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>IRI</td>
+                                    <td>2/1</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>SYR</td>
+                                    <td>1/2</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="group-container">
+                        <h4>グループD</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>順位</th>
+                                    <th>国名</th>
+                                    <th>w/l</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>LBN</td>
+                                    <td>2/1</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>QAT</td>
+                                    <td>2/1</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>KSA</td>
+                                    <td>2/1</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+                <section id="legends">
+                    <h2>NBAの歴代有名選手</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>マイケル・ジョーダン</h4>
+                            <p>NBA史上最高の選手の一人。シカゴ・ブルズを6度の優勝に導き、得点力と勝負強さで世界的人気を築きました。</p>
+                        </div>
+
+                        <div class="card">
+                            <h4>コービー・ブライアント</h4>
+                            <p>レイカーズ一筋で活躍した伝説的スター。5回のNBA優勝を達成し、「マンバ・メンタリティ」でも有名です。</p>
+                        </div>
+
+                        <div class="card">
+                            <h4>レブロン・ジェームズ</h4>
+                            <p>得点・パス・身体能力を兼ね備えた万能選手。長年トップレベルで活躍する現代NBAの象徴です。</p>
+                        </div>
+
+                        <div class="card">
+                            <h4>シャキール・オニール</h4>
+                            <p>圧倒的なパワーでゴール下を支配した名センター。NBA優勝4回を誇る歴代屈指のインサイドプレーヤーです。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="top-players">
+                    <h2>世界ランキング上位国の注目選手（男子）</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>アメリカ</h4>
+                            <ul>
+                                <li><strong>レブロン・ジェームズ</strong>：総合力に優れた世界的スター。</li>
+                                <li><strong>ステフィン・カリー</strong>：3ポイントの名手。</li>
+                                <li><strong>ケビン・デュラント</strong>：得点力抜群のエース。</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>ドイツ</h4>
+                            <ul>
+                                <li><strong>デニス・シュルーダー</strong>：スピードある司令塔。</li>
+                                <li><strong>フランツ・ワグナー</strong>：万能型の若手主力。</li>
+                                <li><strong>ダニエル・タイス</strong>：守備とリバウンドで貢献。</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>セルビア</h4>
+                            <ul>
+                                <li><strong>ニコラ・ヨキッチ</strong>：世界最高峰のセンター。</li>
+                                <li><strong>ボグダン・ボグダノビッチ</strong>：高得点を狙えるシューター。</li>
+                                <li><strong>ニコラ・ヨビッチ</strong>：将来有望な若手フォワード。</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>フランス</h4>
+                            <ul>
+                                <li><strong>ビクター・ウェンバンヤマ</strong>：超長身と万能性を持つ新世代スター。</li>
+                                <li><strong>ルディ・ゴベア</strong>：守備力に優れたセンター。</li>
+                                <li><strong>エバン・フォーニエ</strong>：得点力のあるベテランガード。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="women-top-players">
+                    <h2>世界ランキング上位国の注目選手（女子）</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>アメリカ</h4>
+                            <ul>
+                                <li><strong>ブリタニー・グライナー</strong>：高さと得点力を持つセンター。</li>
+                                <li><strong>アジャ・ウィルソン</strong>：攻守に活躍する世界屈指のフォワード。</li>
+                                <li><strong>ブリアナ・スチュワート</strong>：得点力と万能性を兼ね備えたエース。</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>フランス</h4>
+                            <ul>
+                                <li><strong>マリーン・ヨハネス</strong>：創造性あふれるプレーが魅力のガード。</li>
+                                <li><strong>ガビー・ウィリアムズ</strong>：守備と得点の両面で貢献する万能選手。</li>
+                                <li><strong>サンドリーヌ・グルダ</strong>：経験豊富なインサイドの主力。</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>オーストラリア</h4>
+                            <ul>
+                                <li><strong>エジ・マグベガー</strong>：高さと機動力を持つセンター。</li>
+                                <li><strong>サミー・ウィットコム</strong>：外角シュートに優れるベテラン。</li>
+                                <li><strong>アラナ・スミス</strong>：リバウンドと得点で貢献するビッグマン。</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>中国</h4>
+                            <ul>
+                                <li><strong>ハン・シュー</strong>：高さを生かした得点力が魅力のセンター。</li>
+                                <li><strong>リー・モン</strong>：外角シュートに優れた主力選手。</li>
+                                <li><strong>ヤン・リーウェイ</strong>：ゲームメークを担う司令塔。</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
 
             </div>
 
             <footer>
-                <p>&copy; 2026 スポーツサイト - バスケットボール特設ページ All Rights Reserved.</p>
+                <p>&copy; 2026 CS1 スポーツサイト - バスケットボールページ</p>
             </footer>
         </main>
 
